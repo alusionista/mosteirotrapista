@@ -7,10 +7,6 @@ header {
   font-size: 70px;
 }
 
-header h2 {
-  font-family: "Aniron";
-}
-
 html, body, h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat","Roboto", sans-serif;
   z-index: 0;
