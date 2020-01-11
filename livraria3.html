@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Mosteiro1.1</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/w3.css">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Mosteiro Trapista</title>
+<body>
+  <!-- Image Header -->
+<header class="w3-display-container w3-animate-opacity">
+  <img src="http://www.mosteirotrapista.org.br/imgs/novidades.jpg" alt="boat" style="width:100%" >
+</header>
+  
+<!--Navbar-->
+<div>
+    <div id="navbar1" class="w3-bar w3-theme-d2 w3-left-align">
+     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+     <a href="#" class="w3-bar-item w3-button w3-greyscale-min"><i class="fa fa-home"></i></a>
+     <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-button" title="Notifications">A vida trapista <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+        <button href="#" class="w3-bar-item w3-button w3-white">Nossa Vida</button>
+        <button href="#" class="w3-bar-item w3-button w3-white">Liturgia</button>
+        <button href="#" class="w3-bar-item w3-button w3-white"><i>Lectio Divina</i></button>
+        <button href="#" class="w3-bar-item w3-button w3-white">Trabalho</button>
+        <button href="#" class="w3-bar-item w3-button w3-white">Comunidade</button>
+        <button href="#" class="w3-bar-item w3-button w3-white">O chamado monástico</button>
+      </div>
+    </div>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-button" title="Notifications">OCSO <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+        <button href="#" class="w3-bar-item w3-button w3-white ">A Ordem Cisterciense</button>
+        <button href="#" class="w3-bar-item w3-button w3-white ">São Bento</button>
+        <button href="#" class="w3-bar-item w3-button w3-white ">Santos da Ordem</button>
+        <button href="#" class="w3-bar-item w3-button w3-white ">A tradição do deserto</button>
+        <button href="#" class="w3-bar-item w3-button w3-white ">Nossa Comunidade</button>
+      </div>
+    </div>
+       <button href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Biblioteca</button>
+       <button href="#" class="w3-bar-item w3-button w3-hide-small w3-white">Livraria</button>
+       <button href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Padaria</button>
+       <button href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Novidades</button>
+       <button href="https://caminhocisterciense.com/" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Blog</button>
+     </div>
+    </div>
+   
+     <!-- Navbar on small screens -->
+     <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium" style="position: relative;">
+       <div class="w3-black">
+        <button onclick="myFunction('NB1')" class="w3-bar-item w3-button">A vida trapista <i class="fa fa-caret-down"></i></button>     
+        <div id="NB1" class="w3-hide w3-container" style="margin: 0;">
+          <button href="#" class="w3-bar-item w3-button"> Nossa Vida</button>
+          <button href="#" class="w3-bar-item w3-button"> Liturgia</button>
+          <button href="#" class="w3-bar-item w3-button"><i> Lectio Divina</i></button>
+          <button href="#" class="w3-bar-item w3-button"> Trabalho</button>
+          <button href="#" class="w3-bar-item w3-button"> Comunidade</button>
+          <button href="#" class="w3-bar-item w3-button"> O chamado monástico</button>
+          </div>
+      </div>
+      <div class="w3-black">
+        <button onclick="myFunction('NB2')" class="w3-bar-item w3-button">OCSO <i class="fa fa-caret-down"></i></button>     
+        <div id="NB2" class="w3-hide w3-container" style="margin: 0;">
+          <button href="#" class="w3-bar-item w3-button"> A Ordem Cisterciense</button>
+          <button href="#" class="w3-bar-item w3-button"> São Bento</button>
+          <button href="#" class="w3-bar-item w3-button"> Santos da Ordem</button>
+          <button href="#" class="w3-bar-item w3-button"> A tradição do deserto</button>
+          <button href="#" class="w3-bar-item w3-button"> Nossa Comunidade</button>
+            </div>
+      </div>
+       <button href="#" class="w3-bar-item w3-button">Hospedaria</button>
+       <button href="#" class="w3-bar-item w3-button">Biblioteca</button>
+       <button href="#" class="w3-bar-item w3-button">Livraria</button>
+       <button href="#" class="w3-bar-item w3-button">Padaria</button>
+       <button href="#" class="w3-bar-item w3-button">Novidades</button>
+       <button href="https://caminhocisterciense.com/" class="w3-bar-item w3-button">Blog</button>
+     </div>
+ </div>
+ 
+   
+  <!--Main Content--> 
+   <div class="w3-main" style="margin-left:200px; margin-right: 200px; margin-bottom: 5em;">
+    <div class="w3-container">
+      <section><h1 class="w3-padding-32">Livraria do Mosteiro</h1></section>
+      <div class="w3-panel w3-rightbar w3-border-pale w3-right-align strong">
+        <br>"Renovai-vos pela transformação espiritual de vossa inteligência</br>  
+          Ef 4, 23-24
+          </p>
+        </div>
+
+      <div class="w3-twothird w3-margin-bottom">
+  
+        <p>A página O Caminho Cisterciense, juntamente com a Livraria do Mosteiro Trapista Nossa Senhora do Novo Mundo, desejam promover a boa literatura monástica e contemplativa, publicada atualmente em nosso país, com enfoque na tradição cisterciense.
+          Está nascendo assim a "Livraria do Mosteiro", que se propõe a divulgar e reunir essa literatura em um só lugar.
+          A forma de pagamento é via depósito bancário.
+          </p>
+      </div> 
+          
+      <!--<div class="w3-bar w3-transparent">
+        <button class="w3-bar-item w3-button w3-bottombar" onclick="openCategory('Liturgia')">Liturgia</button>
+        <button class="w3-bar-item w3-button w3-bottombar" onclick="openCategory('Espiritualidade')">Espiritualidade</button>
+        <button class="w3-bar-item w3-button w3-bottombar" onclick="openCategory('Tokyo')">Tokyo</button>
+      </div>-->
+
+      <div class="w3-bar w3-transparent" style="margin-bottom: 2em;">
+        <button class="w3-bar-item w3-button tablink w3-bottombar w3-border-black" onclick="openCategory(event,'Liturgia')">Liturgia</button>
+        <button class="w3-bar-item w3-button tablink w3-bottombar" onclick="openCategory(event,'Espiritualidade')">Espiritualidade</button>
+        <button class="w3-bar-item w3-button tablink w3-bottombar" onclick="openCategory(event,'Teologia')">Teologia</button>
+        <button class="w3-bar-item w3-button tablink w3-bottombar" onclick="openCategory(event,'Padres Cistercienses')">Padres Cistercienses</button>
+        <button class="w3-bar-item w3-button tablink w3-bottombar" onclick="openCategory(event,'Padres do Deserto')">Padres do Deserto</button>
+        <button class="w3-bar-item w3-button tablink w3-bottombar" onclick="openCategory(event,'Padres da Igreja')">Padres da Igreja</button>
+
+      </div>
+      
+<!---->
+        <div id="Liturgia" class="w3-container category">
+
+          <h2>Liturgia</h2>
+          <p>Aqui pode-se acrescentar uma descrição da categoria, se for o caso.</p>
+          
+          <div class="w3-transparent w3-section">
+            <button onclick="myFunction('Lit1')" class="w3-button w3-block w3-container">
+              <div class="w3-cell"><p class="fakebook b1 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+              <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+            </button>
+            <div id="Lit1" class="w3-hide w3-container">
+              <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+              <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+            </div>
+          </div>
+<!---->
+<div class="hr w3-container"></div>
+<!---->
+<div class="w3-transparent w3-section">
+  <button onclick="myFunction('Lit2')" class="w3-button w3-block w3-container">
+    <div class="w3-cell"><p class="fakebook b2 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+    <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+  </button>
+  <div id="Lit2" class="w3-hide w3-container">
+    <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+    <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+  </div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<div class="w3-transparent w3-section">
+  <button onclick="myFunction('Lit3')" class="w3-button w3-block w3-container">
+    <div class="w3-cell"><p class="fakebook b3 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+    <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+  </button>
+  <div id="Lit3" class="w3-hide w3-container">
+    <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+    <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+  </div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<div class="w3-transparent w3-section">
+  <button onclick="myFunction('Lit4')" class="w3-button w3-block w3-container">
+    <div class="w3-cell"><p class="fakebook b4 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+    <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+  </button>
+  <div id="Lit4" class="w3-hide w3-container">
+    <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+    <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+  </div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<div class="w3-transparent w3-section">
+  <button onclick="myFunction('Lit5')" class="w3-button w3-block w3-container">
+    <div class="w3-cell"><p class="fakebook b5 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+    <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+  </button>
+  <div id="Lit5" class="w3-hide w3-container">
+    <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+    <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+  </div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<div class="w3-transparent w3-section">
+  <button onclick="myFunction('Lit6')" class="w3-button w3-block w3-container">
+    <div class="w3-cell"><p class="fakebook b6 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+    <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+  </button>
+  <div id="Lit6" class="w3-hide w3-container">
+    <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+    <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+  </div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<div class="w3-transparent w3-section">
+  <button onclick="myFunction('Lit7')" class="w3-button w3-block w3-container">
+    <div class="w3-cell"><p class="fakebook b7 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+    <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+  </button>
+  <div id="Lit7" class="w3-hide w3-container">
+    <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+    <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+  </div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<div class="w3-transparent w3-section">
+  <button onclick="myFunction('Lit8')" class="w3-button w3-block w3-container">
+    <div class="w3-cell"><p class="fakebook b8 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+    <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+  </button>
+  <div id="Lit8" class="w3-hide w3-container">
+    <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+    <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+  </div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<!---->
+<div class="w3-transparent w3-section">
+  <button onclick="myFunction('Lit9')" class="w3-button w3-block w3-container">
+    <div class="w3-cell"><p class="fakebook b9 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+    <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+  </button>
+  <div id="Lit9" class="w3-hide w3-container">
+    <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+    <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+  </div>
+</div>
+<!---->
+
+</div>
+<!---->
+      <div id="Espiritualidade" class="w3-container category" style="display:none">
+        <h2>Espiritualidade</h2>
+        <p>Aqui pode-se acrescentar uma descrição da categoria, se for o caso.</p>
+          
+        <div class="w3-transparent w3-section">
+          <button onclick="myFunction('Esp1')" class="w3-button w3-block w3-container">
+            <div class="w3-cell"><p class="fakebook b2 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+            <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+          </button>
+          <div id="Esp1" class="w3-hide w3-container">
+            <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+            <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+          </div>
+        </div>
+<!---->
+<div class="hr w3-container"></div>
+<!---->
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('Esp2')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b3 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="Esp2" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('Esp3')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b4 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="Esp3" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('Esp4')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b5 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="Esp4" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('Esp5')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b6 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="Esp5" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('Esp6')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b7 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="Esp6" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('Esp7')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b8 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="Esp7" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('Esp8')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b9 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="Esp8" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<!---->
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('Esp9')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b10 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="Esp9" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+<!---->
+
+</div>
+<!---->
+      <div id="Teologia" class="w3-container category" style="display:none">
+        <h2>Teologia</h2>
+        <p>Aqui pode-se acrescentar uma descrição da categoria, se for o caso.</p>
+        <div class="w3-transparent w3-section">
+          <button onclick="myFunction('Tlg1')" class="w3-button w3-block w3-container">
+            <div class="w3-cell"><p class="fakebook b3 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+            <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+          </button>
+          <div id="Tlg1" class="w3-hide w3-container">
+            <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+            <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+          </div>
+        </div>
+<!---->
+<div class="hr w3-container"></div>
+<!---->
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('Tlg2')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b4 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="Tlg2" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('Tlg3')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b5 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="Tlg3" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('Tlg4')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b6 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="Tlg4" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('Tlg5')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b7 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="Tlg5" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('Tlg6')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b8 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="Tlg6" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('Tlg7')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b9 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="Tlg7" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('Tlg8')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b10 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="Tlg8" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<!---->
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('Tlg9')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b11 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="Tlg9" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+</div>
+<!---->
+      <div id="Padres Cistercienses" class="w3-container category" style="display:none">
+        <h2>Padres Cistercienses</h2>
+        <p>Aqui pode-se acrescentar uma descrição da categoria, se for o caso.</p>
+        <div class="w3-transparent w3-section">
+          <button onclick="myFunction('PCist1')" class="w3-button w3-block w3-container">
+            <div class="w3-cell"><p class="fakebook b4 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+            <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+          </button>
+          <div id="PCist1" class="w3-hide w3-container">
+            <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+            <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+          </div>
+        </div>
+<!---->
+<div class="hr w3-container"></div>
+<!---->
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('PCist2')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b5 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="PCist2" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('PCist3')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b6 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="PCist3" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('PCist4')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b7 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="PCist4" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('PCist5')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b8 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="PCist5" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('PCist6')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b9 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="PCist6" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('PCist7')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b10 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="PCist7" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('PCist8')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b11 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="PCist8" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<!---->
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('PCist9')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b12 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="PCist9" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+
+      </div>
+<!---->
+      <div id="Padres do Deserto" class="w3-container category" style="display:none">
+        <h2>Padres do Deserto</h2>
+        <p>Aqui pode-se acrescentar uma descrição da categoria, se for o caso.</p>
+
+        <div class="w3-transparent w3-section">
+          <button onclick="myFunction('PDes1')" class="w3-button w3-block w3-container">
+            <div class="w3-cell"><p class="fakebook b5 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+            <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+          </button>
+          <div id="PDes1" class="w3-hide w3-container">
+            <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+            <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+          </div>
+        </div>
+<!---->
+<div class="hr w3-container"></div>
+<!---->
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('PDes2')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b6 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="PDes2" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('PDes3')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b7 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="PDes3" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('PDes4')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b8 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="PDes4" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('PDes5')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b9 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="PDes5" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('PDes6')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b10 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="PDes6" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('PDes7')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b11 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="PDes7" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('PDes8')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b12 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="PDes8" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<!---->
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('PDes9')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b1 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="PDes9" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+
+      </div>
+<!---->
+      <div id="Padres da Igreja" class="w3-container category" style="display:none">
+        <h2>Padres da Igreja</h2>
+        <p>Aqui pode-se acrescentar uma descrição da categoria, se for o caso.</p>
+        
+        <div class="w3-transparent w3-section">
+          <button onclick="myFunction('PdIgre1')" class="w3-button w3-block w3-container">
+            <div class="w3-cell"><p class="fakebook b6 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+            <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+          </button>
+          <div id="PdIgre1" class="w3-hide w3-container">
+            <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+            <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+          </div>
+        </div>
+<!---->
+<div class="hr w3-container"></div>
+<!---->
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('PdIgre2')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b7 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="PdIgre2" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('PdIgre3')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b8 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="PdIgre3" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('PdIgre4')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b9 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="PdIgre4" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('PdIgre5')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b10 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="PdIgre5" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('PdIgre6')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b11 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="PdIgre6" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('PdIgre7')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b12 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="PdIgre7" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('PdIgre8')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b1 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="PdIgre8" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+<!---->
+<div class="hr w3-container"></div>
+<!---->
+<div class="w3-transparent w3-section">
+<button onclick="myFunction('PdIgre9')" class="w3-button w3-block w3-container">
+  <div class="w3-cell"><p class="fakebook b2 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
+  <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
+</button>
+<div id="PdIgre9" class="w3-hide w3-container">
+  <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+  <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+</div>
+</div>
+</div>
+<!---->
+    </div>
+   </div>
+   
+
+
+
+
+      <div class="w3-container w3-padding-8 w3-theme-l5" id="contact">
+        <div class="w3-row w3-main" style="margin-left:250px; margin-right: 250px; margin-top: 8px;">
+          <div class="w3-col m9">
+            <h3>Abadia Trapista Nossa Senhora do Novo Mundo</h3>
+            <div class="w3-cell w3-text-grey w3-xlarge w3-padding-small"><i class="fa fa-map-marker"></i></div>
+            <div class="w3-cell w3-padding-8 w3-left-align"><h5>Campo do Tenente, PR - Brasil</h5></div>
+            
+            
+            <p class="w3-padding-8"><i class="fa fa-envelope-open-o w3-text-grey w3-xlarge w3-padding-small"></i> CEP 83870-000 | Caixa Postal 11 </p>
+            <p class="w3-padding-8"><i class="fa fa-phone w3-text-grey w3-xlarge w3-padding-small"></i>   Fone/fax: (41) 3628-1264</p>
+          </div>
+          <div class="w3-col m3" style="margin-top: 48px;">
+            <p class="w3-padding-8"><i class="fa fa-envelope-o w3-text-grey w3-xlarge w3-padding-small"></i> Comunidade</p>
+            <p class="w3-padding-8"><i class="fa fa-envelope-o w3-text-grey w3-xlarge w3-padding-small"></i> Hospedaria </p>
+            <p class="w3-padding-8"><i class="fa fa-envelope-o w3-text-grey w3-xlarge w3-padding-small"></i> Vocações </p>
+          </div>
+        </div>
+      
+
+
+<!--End of main content-->
+<script>
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+  function openCategory(evt, categoryName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("category");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-border-black", "");
+  }
+  document.getElementById(categoryName).style.display = "block";
+  evt.currentTarget.className += " w3-border-black";
+}
+//Accordion
+
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+//Sticky Navbar
+  
+window.onscroll = function() {myFunction1()};
+        var navbar1 = document.getElementById("navbar1");
+        var sticky = navbar1.offsetTop;
+
+        function myFunction1() {
+          if (window.pageYOffset >= sticky) {
+            navbar1.classList.add("sticky")
+          } else {
+           navbar1.classList.remove("sticky");
+         }
+        }
+
+    </script>
+  </body

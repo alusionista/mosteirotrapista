@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('//db.onlinewebfonts.com/c/2e30c0e2ce7158a62133a0b328e71e72?family=Aniron');
+header {
+  font-family: "Aniron";
+  font-size: 50px;
+  h2{
+    font-family: "Aniron";
+  }
+}
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat","Roboto", sans-serif; z-index: 0;}
+body {
+    font-family: 'Raleway','Montserrat', 'sans-serif', 'Calibri';
+    margin: 0;
+    background: #fcfcfc;
+    font-size: 18px;    
+}
+/*Sticky Navbar*/
+
+#navbar1 {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar1 a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 8px 12px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar1 a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar1 a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+.sticky + .w3-main {
+  padding-top: 690px;
+}
+
+/* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {
+    padding: 0px 0px 0px 30px;
+    float: left;
+    width: 60%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    padding: 0px 0px 0px 30px;
+    float: left;
+    width: 38%;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 20%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 25px;
+    margin-top: 20px;
+    /*box-shadow: 0px 3px 3px rgba(0, 0, 0,0.15);*/
+    border-radius: 5px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    align-content: auto;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  .footer {
+    h3 {
+      font-weight: bolder;
+    }
+    p {
+      font-weight: lighter;
+    }
+  }
+.tab {
+  height: 8vh;
+  text-align: left;
+  padding: 4px;
+  margin: 2px;
+}
+.nav-active {
+background-color: rgb(255, 255, 255);
+color: black;
+}
+.pvw-title div {
+  display: none;
+}
+.pvw-title:after {
+  content: 'whatever it is you want to add';
+}
+
+.fakebook {
+  border: 3px 3px 3px 3px, solid, black !important;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.288);
+  height: 15em;
+  width: 10em;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.fakebook:hover {
+  box-shadow: 0 8px 10px 0 rgba(0,0,0,0.24), 0 10px 12px 0 rgba(0,0,0,0.19);
+}
+  
+ .hr {
+  height: 1px;
+  width: 60%;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-left: 30%;
+ }
+ .b1
+ {color:#fff;background-color:#5856d6;}
+ .b2
+ {color:#fff;background-color:#007AFF}
+ .b3
+ {color:#fff;background-color:#34AADC}
+ .b4
+ {color:#fff;background-color:#5AC8FA}
+ .b5
+ {color:#000;background-color:#4cd964}
+ .b6
+ {color:#fff;background-color:#ff2d55}
+ .b7
+ {color:#fff;background-color:#ff3b30}
+ .b8
+ {color:#fff;background-color:#ff9500}
+ .b9
+ {color:#000;background-color:#ffcc00}
+ .b10
+ {color:#fff;background-color:#8e8e93}
+ .b11
+ {color:#000;background-color:#ceced2}
+ .b12
+ {color:#000;background-color:#efeff4}
