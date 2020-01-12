@@ -17,8 +17,10 @@
   
 <!--Navbar-->
 <div>
-    <div id="navbar1" class="w3-bar w3-theme-d2 w3-left-align">
-     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+    <!--<div id="navbar1" class="w3-bar w3-theme-d2 w3-left-align">-->
+    <div class="w3-bar w3-theme-d2 w3-left-align">
+
+     <a class="w3-bar-item w3-button w3-hide-large w3-hide-medium w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
      <a href="#" class="w3-bar-item w3-button w3-greyscale-min"><i class="fa fa-home"></i></a>
      <div class="w3-dropdown-hover w3-hide-small">
       <button class="w3-button" title="Notifications">A vida trapista <i class="fa fa-caret-down"></i></button>     
@@ -100,12 +102,6 @@
           </p>
       </div> 
           
-      <!--<div class="w3-bar w3-transparent">
-        <button class="w3-bar-item w3-button w3-bottombar" onclick="openCategory('Liturgia')">Liturgia</button>
-        <button class="w3-bar-item w3-button w3-bottombar" onclick="openCategory('Espiritualidade')">Espiritualidade</button>
-        <button class="w3-bar-item w3-button w3-bottombar" onclick="openCategory('Tokyo')">Tokyo</button>
-      </div>-->
-
       <div class="w3-bar w3-transparent" style="margin-bottom: 2em;">
         <button class="w3-bar-item w3-button tablink w3-bottombar w3-border-black" onclick="openCategory(event,'Liturgia')">Liturgia</button>
         <button class="w3-bar-item w3-button tablink w3-bottombar" onclick="openCategory(event,'Espiritualidade')">Espiritualidade</button>
@@ -123,7 +119,7 @@
           <p>Aqui pode-se acrescentar uma descrição da categoria, se for o caso.</p>
           
           <div class="w3-transparent w3-section">
-            <button onclick="myFunction('Lit1')" class="w3-button w3-block w3-container">
+            <button onclick="myFunction('Lit1')" class="w3-button w3-block w3-container books">
               <div class="w3-cell"><p class="fakebook b1 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
               <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
             </button>
@@ -136,7 +132,7 @@
 <div class="hr w3-container"></div>
 <!---->
 <div class="w3-transparent w3-section">
-  <button onclick="myFunction('Lit2')" class="w3-button w3-block w3-container">
+  <button onclick="myFunction('Lit2')" class="w3-button w3-block w3-container books">
     <div class="w3-cell"><p class="fakebook b2 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
     <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
   </button>
@@ -148,7 +144,7 @@
 <!---->
 <div class="hr w3-container"></div>
 <div class="w3-transparent w3-section">
-  <button onclick="myFunction('Lit3')" class="w3-button w3-block w3-container">
+  <button onclick="myFunction('Lit3')" class="w3-button w3-block w3-container books">
     <div class="w3-cell"><p class="fakebook b3 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
     <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
   </button>
@@ -160,7 +156,7 @@
 <!---->
 <div class="hr w3-container"></div>
 <div class="w3-transparent w3-section">
-  <button onclick="myFunction('Lit4')" class="w3-button w3-block w3-container">
+  <button onclick="myFunction('Lit4')" class="w3-button w3-block w3-container books">
     <div class="w3-cell"><p class="fakebook b4 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
     <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
   </button>
@@ -172,7 +168,7 @@
 <!---->
 <div class="hr w3-container"></div>
 <div class="w3-transparent w3-section">
-  <button onclick="myFunction('Lit5')" class="w3-button w3-block w3-container">
+  <button onclick="myFunction('Lit5')" class="w3-button w3-block w3-container books">
     <div class="w3-cell"><p class="fakebook b5 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
     <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
   </button>
@@ -184,7 +180,7 @@
 <!---->
 <div class="hr w3-container"></div>
 <div class="w3-transparent w3-section">
-  <button onclick="myFunction('Lit6')" class="w3-button w3-block w3-container">
+  <button onclick="myFunction('Lit6')" class="w3-button w3-block w3-container books">
     <div class="w3-cell"><p class="fakebook b6 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
     <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
   </button>
@@ -196,7 +192,7 @@
 <!---->
 <div class="hr w3-container"></div>
 <div class="w3-transparent w3-section">
-  <button onclick="myFunction('Lit7')" class="w3-button w3-block w3-container">
+  <button onclick="myFunction('Lit7')" class="w3-button w3-block w3-container books">
     <div class="w3-cell"><p class="fakebook b7 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
     <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
   </button>
@@ -208,7 +204,7 @@
 <!---->
 <div class="hr w3-container"></div>
 <div class="w3-transparent w3-section">
-  <button onclick="myFunction('Lit8')" class="w3-button w3-block w3-container">
+  <button onclick="myFunction('Lit8')" class="w3-button w3-block w3-container books">
     <div class="w3-cell"><p class="fakebook b8 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
     <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
   </button>
@@ -221,7 +217,7 @@
 <div class="hr w3-container"></div>
 <!---->
 <div class="w3-transparent w3-section">
-  <button onclick="myFunction('Lit9')" class="w3-button w3-block w3-container">
+  <button onclick="myFunction('Lit9')" class="w3-button w3-block w3-container books">
     <div class="w3-cell"><p class="fakebook b9 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
     <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
   </button>
@@ -239,7 +235,7 @@
         <p>Aqui pode-se acrescentar uma descrição da categoria, se for o caso.</p>
           
         <div class="w3-transparent w3-section">
-          <button onclick="myFunction('Esp1')" class="w3-button w3-block w3-container">
+          <button onclick="myFunction('Esp1')" class="w3-button w3-block w3-container books">
             <div class="w3-cell"><p class="fakebook b2 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
             <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
           </button>
@@ -252,7 +248,7 @@
 <div class="hr w3-container"></div>
 <!---->
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('Esp2')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('Esp2')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b3 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -264,7 +260,7 @@
 <!---->
 <div class="hr w3-container"></div>
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('Esp3')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('Esp3')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b4 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -276,7 +272,7 @@
 <!---->
 <div class="hr w3-container"></div>
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('Esp4')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('Esp4')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b5 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -288,7 +284,7 @@
 <!---->
 <div class="hr w3-container"></div>
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('Esp5')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('Esp5')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b6 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -300,7 +296,7 @@
 <!---->
 <div class="hr w3-container"></div>
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('Esp6')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('Esp6')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b7 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -312,7 +308,7 @@
 <!---->
 <div class="hr w3-container"></div>
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('Esp7')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('Esp7')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b8 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -324,7 +320,7 @@
 <!---->
 <div class="hr w3-container"></div>
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('Esp8')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('Esp8')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b9 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -337,7 +333,7 @@
 <div class="hr w3-container"></div>
 <!---->
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('Esp9')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('Esp9')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b10 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -354,7 +350,7 @@
         <h2>Teologia</h2>
         <p>Aqui pode-se acrescentar uma descrição da categoria, se for o caso.</p>
         <div class="w3-transparent w3-section">
-          <button onclick="myFunction('Tlg1')" class="w3-button w3-block w3-container">
+          <button onclick="myFunction('Tlg1')" class="w3-button w3-block w3-container books">
             <div class="w3-cell"><p class="fakebook b3 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
             <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
           </button>
@@ -367,7 +363,7 @@
 <div class="hr w3-container"></div>
 <!---->
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('Tlg2')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('Tlg2')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b4 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -379,7 +375,7 @@
 <!---->
 <div class="hr w3-container"></div>
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('Tlg3')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('Tlg3')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b5 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -391,7 +387,7 @@
 <!---->
 <div class="hr w3-container"></div>
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('Tlg4')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('Tlg4')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b6 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -403,7 +399,7 @@
 <!---->
 <div class="hr w3-container"></div>
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('Tlg5')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('Tlg5')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b7 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -415,7 +411,7 @@
 <!---->
 <div class="hr w3-container"></div>
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('Tlg6')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('Tlg6')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b8 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -427,7 +423,7 @@
 <!---->
 <div class="hr w3-container"></div>
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('Tlg7')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('Tlg7')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b9 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -439,7 +435,7 @@
 <!---->
 <div class="hr w3-container"></div>
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('Tlg8')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('Tlg8')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b10 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -452,7 +448,7 @@
 <div class="hr w3-container"></div>
 <!---->
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('Tlg9')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('Tlg9')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b11 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -467,7 +463,7 @@
         <h2>Padres Cistercienses</h2>
         <p>Aqui pode-se acrescentar uma descrição da categoria, se for o caso.</p>
         <div class="w3-transparent w3-section">
-          <button onclick="myFunction('PCist1')" class="w3-button w3-block w3-container">
+          <button onclick="myFunction('PCist1')" class="w3-button w3-block w3-container books">
             <div class="w3-cell"><p class="fakebook b4 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
             <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
           </button>
@@ -480,7 +476,7 @@
 <div class="hr w3-container"></div>
 <!---->
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('PCist2')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('PCist2')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b5 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -492,7 +488,7 @@
 <!---->
 <div class="hr w3-container"></div>
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('PCist3')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('PCist3')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b6 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -504,7 +500,7 @@
 <!---->
 <div class="hr w3-container"></div>
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('PCist4')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('PCist4')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b7 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -516,7 +512,7 @@
 <!---->
 <div class="hr w3-container"></div>
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('PCist5')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('PCist5')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b8 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -528,7 +524,7 @@
 <!---->
 <div class="hr w3-container"></div>
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('PCist6')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('PCist6')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b9 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -540,7 +536,7 @@
 <!---->
 <div class="hr w3-container"></div>
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('PCist7')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('PCist7')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b10 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -552,7 +548,7 @@
 <!---->
 <div class="hr w3-container"></div>
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('PCist8')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('PCist8')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b11 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -565,7 +561,7 @@
 <div class="hr w3-container"></div>
 <!---->
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('PCist9')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('PCist9')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b12 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -582,7 +578,7 @@
         <p>Aqui pode-se acrescentar uma descrição da categoria, se for o caso.</p>
 
         <div class="w3-transparent w3-section">
-          <button onclick="myFunction('PDes1')" class="w3-button w3-block w3-container">
+          <button onclick="myFunction('PDes1')" class="w3-button w3-block w3-container books">
             <div class="w3-cell"><p class="fakebook b5 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
             <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
           </button>
@@ -595,7 +591,7 @@
 <div class="hr w3-container"></div>
 <!---->
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('PDes2')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('PDes2')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b6 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -607,7 +603,7 @@
 <!---->
 <div class="hr w3-container"></div>
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('PDes3')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('PDes3')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b7 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -619,7 +615,7 @@
 <!---->
 <div class="hr w3-container"></div>
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('PDes4')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('PDes4')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b8 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -631,7 +627,7 @@
 <!---->
 <div class="hr w3-container"></div>
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('PDes5')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('PDes5')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b9 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -643,7 +639,7 @@
 <!---->
 <div class="hr w3-container"></div>
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('PDes6')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('PDes6')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b10 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -655,7 +651,7 @@
 <!---->
 <div class="hr w3-container"></div>
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('PDes7')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('PDes7')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b11 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -667,7 +663,7 @@
 <!---->
 <div class="hr w3-container"></div>
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('PDes8')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('PDes8')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b12 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -680,7 +676,7 @@
 <div class="hr w3-container"></div>
 <!---->
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('PDes9')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('PDes9')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b1 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -697,7 +693,7 @@
         <p>Aqui pode-se acrescentar uma descrição da categoria, se for o caso.</p>
         
         <div class="w3-transparent w3-section">
-          <button onclick="myFunction('PdIgre1')" class="w3-button w3-block w3-container">
+          <button onclick="myFunction('PdIgre1')" class="w3-button w3-block w3-container books">
             <div class="w3-cell"><p class="fakebook b6 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
             <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
           </button>
@@ -710,7 +706,7 @@
 <div class="hr w3-container"></div>
 <!---->
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('PdIgre2')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('PdIgre2')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b7 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -722,7 +718,7 @@
 <!---->
 <div class="hr w3-container"></div>
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('PdIgre3')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('PdIgre3')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b8 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -734,7 +730,7 @@
 <!---->
 <div class="hr w3-container"></div>
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('PdIgre4')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('PdIgre4')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b9 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -746,7 +742,7 @@
 <!---->
 <div class="hr w3-container"></div>
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('PdIgre5')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('PdIgre5')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b10 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -758,7 +754,7 @@
 <!---->
 <div class="hr w3-container"></div>
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('PdIgre6')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('PdIgre6')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b11 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -770,7 +766,7 @@
 <!---->
 <div class="hr w3-container"></div>
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('PdIgre7')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('PdIgre7')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b12 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -782,7 +778,7 @@
 <!---->
 <div class="hr w3-container"></div>
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('PdIgre8')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('PdIgre8')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b1 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
@@ -795,7 +791,7 @@
 <div class="hr w3-container"></div>
 <!---->
 <div class="w3-transparent w3-section">
-<button onclick="myFunction('PdIgre9')" class="w3-button w3-block w3-container">
+<button onclick="myFunction('PdIgre9')" class="w3-button w3-block w3-container books">
   <div class="w3-cell"><p class="fakebook b2 w3-border w3-padding-large w3-padding-32 w3-center ">Capa<br>do</br>Livro</p></div>
   <div class="w3-cell w3-cell-bottom w3-padding-large w3-padding-32 w3-left-align"><h3>O Espírito da Liturgia</h3>Autor: Romano Guardini<br>Editora: Cultor de Livros</br>R$25,00</div>
 </button>
